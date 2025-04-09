@@ -22,8 +22,8 @@ from __future__ import annotations
 from typing import List, Literal, Optional
 
 from buildarr.config import RemoteMapEntry
-from buildarr.types import BaseEnum, NonEmptyStr, Port
-from pydantic import SecretStr
+from buildarr.types import BaseEnum, NonEmptyStr, Port, SecretStr
+# from pydantic import SecretStr
 
 from .base import TorrentDownloadClient
 
