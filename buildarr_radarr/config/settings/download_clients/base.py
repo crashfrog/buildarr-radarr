@@ -167,7 +167,7 @@ class DownloadClient(RadarrConfigBase):
             remote_attrs = {**api_downloadclient.to_dict(), **updated_attrs}
             with radarr_api_client(secrets=secrets) as api_client:
                 radarr.DownloadClientApi(api_client).update_download_client(
-                    id=str(api_downloadclient.id),
+                    id=int(api_downloadclient.id),
                     download_client_resource=radarr.DownloadClientResource.from_dict(
                         remote_attrs,
                     ),
