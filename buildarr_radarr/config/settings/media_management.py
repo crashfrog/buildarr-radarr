@@ -41,6 +41,7 @@ class ColonReplacement(BaseEnum):
     dash = "dash"
     space_dash = "spaceDash"
     space_dash_space = "spaceDashSpace"
+    smart = "smart"
 
 
 class PropersAndRepacks(BaseEnum):
